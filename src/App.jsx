@@ -1,35 +1,32 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import ColorBendsNew from './components/ColorBendsNew';
+import Particles from './components/Particles';
 import Hero from './components/Hero';
 import About from './components/About';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
+import MagicBento from './components/MagicBento';
+import GlitchText from './components/GlitchText';
 
 function App() {
   return (
     <div className="app">
       <Navbar />
 
-      {/* Background animado con ColorBends */}
+      {/* Background animado con Particles */}
       <div className="background-wrapper">
-        <ColorBendsNew
-          colors={[
-            '#71c119', // kelly-green
-            '#741e7b', // purple
-            '#5e2667', // finn
-            '#cbe3ac', // tea-green
-            '#71c119', // kelly-green
-          ]}
+        <Particles
+          particleCount={600}
+          particleSpread={20}
           speed={0.15}
-          scale={1.2}
-          frequency={0.8}
-          warpStrength={1.2}
-          mouseInfluence={0.8}
-          parallax={0.3}
-          noise={0.05}
-          autoRotate={5}
-          transparent={true}
+          particleColors={['#71c119', '#8fd938', '#71c119']}
+          moveParticlesOnHover={true}
+          particleHoverFactor={2}
+          alphaParticles={true}
+          particleBaseSize={150}
+          sizeRandomness={3}
+          cameraDistance={15}
+          disableRotation={false}
         />
       </div>
 
@@ -49,11 +46,17 @@ function App() {
               <h2 style={{ 
                 fontSize: '2.8rem', 
                 marginBottom: '16px',
-                color: '#741e7b',
                 fontFamily: 'Montserrat, sans-serif',
                 fontWeight: 800
               }}>
-                Nuestros Servicios
+                <GlitchText
+                  speed={1}
+                  enableShadows={true}
+                  enableOnHover={true}
+                  className='custom-class'
+                >
+                  Nuestros Servicios
+                </GlitchText>
               </h2>
               <p style={{ 
                 fontSize: '1.2rem', 
@@ -101,28 +104,19 @@ function App() {
                   desc: 'Consultas sobre medicamentos, posología y contraindicaciones sin cargo.' 
                 }
               ].map((service, index) => (
-                <div key={index} style={{ 
-                  background: 'rgba(255, 255, 255, 0.1)', 
-                  backdropFilter: 'blur(10px)',
-                  WebkitBackdropFilter: 'blur(10px)',
-                  padding: '40px 30px', 
-                  borderRadius: '20px',
-                  textAlign: 'center',
-                  transition: 'all 0.3s ease',
-                  border: '2px solid rgba(255, 255, 255, 0.2)',
-                  boxShadow: '0 5px 15px rgba(0, 0, 0, 0.1)',
-                  cursor: 'pointer'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-8px)';
-                  e.currentTarget.style.borderColor = '#71c119';
-                  e.currentTarget.style.boxShadow = '0 10px 30px rgba(113, 193, 25, 0.3)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.2)';
-                  e.currentTarget.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
-                }}>
+                <MagicBento
+                  key={index}
+                  textAutoHide={true}
+                  enableStars={true}
+                  enableSpotlight={true}
+                  enableBorderGlow={true}
+                  enableTilt={true}
+                  enableMagnetism={true}
+                  clickEffect={true}
+                  spotlightRadius={300}
+                  particleCount={12}
+                  glowColor="113, 193, 25"
+                >
                   <div style={{ 
                     width: '70px',
                     height: '70px',
@@ -153,7 +147,7 @@ function App() {
                   }}>
                     {service.desc}
                   </p>
-                </div>
+                </MagicBento>
               ))}
             </div>
           </div>

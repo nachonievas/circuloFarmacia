@@ -1,0 +1,13 @@
+.fuzzy-text {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  cursor: default;
+  user-select: none;
+}
+
+.fuzzy-text:hover {
+  text-shadow: 0 0 10px rgba(113, 193, 25, 0.5);
+}
