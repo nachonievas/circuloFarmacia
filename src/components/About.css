@@ -1,0 +1,146 @@
+.about {
+  padding: 100px 0;
+  background: var(--white);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper {
+  width: 100%;
+  max-width: 400px;
+  animation: float 4s ease-in-out infinite;
+}
+
+.image-wrapper svg {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 10px 30px rgba(116, 30, 123, 0.2));
+}
+
+.about-text {
+  color: var(--black);
+}
+
+.about-title {
+  font-size: 2.8rem;
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, var(--purple), var(--kelly-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--gray-medium);
+  margin-bottom: 40px;
+}
+
+.about-description strong {
+  color: var(--purple);
+  font-weight: 600;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(113, 193, 25, 0.1), rgba(116, 30, 123, 0.1));
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--purple);
+  margin-bottom: 8px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--gray-medium);
+  font-weight: 500;
+}
+
+.about-features {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.05rem;
+  color: var(--black);
+}
+
+.feature-item svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .about-title {
+    font-size: 2.2rem;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .image-wrapper {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 640px) {
+  .about {
+    padding: 60px 0;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+}
