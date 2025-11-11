@@ -1,5 +1,6 @@
 import './Hero.css';
 import isotipo from '../assets/images/isotipo.png';
+import TextType from './TextType';
 
 export default function Hero() {
   const handleWhatsAppClick = () => {
@@ -17,7 +18,13 @@ export default function Hero() {
       <div className="hero-content container">
         <div className="hero-text">
           <h1 className="hero-title fade-in-up">
-            Tu salud es nuestra <span className="highlight">prioridad</span>
+            <TextType 
+              text={["Tu salud es nuestra prioridad", "Atención personalizada", "Servicio de calidad"]}
+              typingSpeed={75}
+              pauseDuration={1500}
+              showCursor={true}
+              cursorCharacter="|"
+            />
           </h1>
           <p className="hero-subtitle fade-in-up">
             Más de 20 años brindando servicio profesional y atención personalizada. 

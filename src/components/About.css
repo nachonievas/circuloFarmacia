@@ -7,13 +7,22 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .about-image {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.gallery-wrapper {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .image-wrapper {
@@ -30,6 +39,8 @@
 
 .about-text {
   color: var(--black);
+  display: flex;
+  flex-direction: column;
 }
 
 .about-title {
@@ -39,6 +50,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  display: none; /* Oculto porque ahora usamos TrueFocus */
 }
 
 .about-description {
@@ -125,11 +137,19 @@
   .image-wrapper {
     max-width: 300px;
   }
+
+  .gallery-wrapper {
+    height: 450px;
+  }
 }
 
 @media (max-width: 640px) {
   .about {
     padding: 60px 0;
+  }
+
+  .gallery-wrapper {
+    height: 350px;
   }
 
   .about-title {
