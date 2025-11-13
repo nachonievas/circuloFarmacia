@@ -44,7 +44,7 @@ export default function Hero() {
         </div>
         <div className="hero-image">
           <div className="pharmacy-icon">
-            <img src={isotipo} alt="Farmacia Círculo" className="isotipo-img" />
+            <img src={isotipo} alt="Farmacia El Círculo" className="isotipo-img" />
           </div>
         </div>
       </div>

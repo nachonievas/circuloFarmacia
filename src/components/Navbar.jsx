@@ -44,7 +44,7 @@ export default function Navbar() {
 
   const handleWhatsApp = () => {
     const phoneNumber = '5491134567890';
-    const message = encodeURIComponent('Hola! Me comunico desde la página web de Farmacia Círculo.');
+    const message = encodeURIComponent('Hola! Me comunico desde la página web de Farmacia El Círculo.');
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };
 
@@ -52,7 +52,7 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container container">
         <div className="navbar-logo">
-          <img src={logo} alt="Farmacia Círculo" className="navbar-logo-img" />
+          <img src={logo} alt="Farmacia El Círculo" className="navbar-logo-img" />
         </div>
 
         <ul className="navbar-menu">

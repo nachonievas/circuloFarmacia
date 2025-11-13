@@ -22,15 +22,15 @@ export default function About() {
               />
             </div>
           </div>
-          <div className="about-text">
-            <TrueFocus 
-              sentence="Sobre Farmacia Círculo"
-              manualMode={false}
-              blurAmount={5}
-              borderColor="#71c119"
-              glowColor="rgba(113, 193, 25, 0.6)"
-              animationDuration={0.5}
-              pauseBetweenAnimations={1}
+                  <div className="about-text">
+            <TrueFocus
+              revealText="Sobre Nosotros"
+              sentence="Sobre Farmacia El Círculo"
+              manualControl={false}
+              revealSize={14}
+              revealDuration={1.2}
+              revealStagger={0.03}
+              revealTransition="ease-in-out"
             />
             <p className="about-description">
               Somos una farmacia familiar con <strong>más de 20 años de experiencia</strong> en el barrio. 

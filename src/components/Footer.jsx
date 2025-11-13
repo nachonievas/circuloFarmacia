@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3 className="footer-title">Farmacia Círculo</h3>
+            <h3 className="footer-title">Farmacia El Círculo</h3>
             <p className="footer-description">
               Tu salud es nuestra prioridad. Más de 20 años cuidando tu bienestar y el de tu familia.
             </p>
@@ -76,7 +76,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {currentYear} Farmacia Círculo. Todos los derechos reservados.</p>
+          <p>&copy; {currentYear} Farmacia El Círculo. Todos los derechos reservados.</p>
           <p className="footer-disclaimer">
             Medicamentos autorizados por ANMAT. Consulte a su farmacéutico.
           </p>

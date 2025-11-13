@@ -1,0 +1,221 @@
+.pharmacy-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  background: #000000;
+}
+
+/* Gradiente base con el color verde de la farmacia */
+.gradient-base {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    #000000 0%,
+    #0a1a0a 25%,
+    #0d1f0d 50%,
+    #0a1a0a 75%,
+    #000000 100%
+  );
+  animation: gradientShift 15s ease infinite;
+}
+
+/* Patrón de cruces farmacéuticas */
+.crosses-pattern {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+}
+
+.cross {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+}
+
+.cross-horizontal,
+.cross-vertical {
+  position: absolute;
+  background: rgba(113, 193, 25, 0.3);
+  border-radius: 4px;
+}
+
+.cross-horizontal {
+  width: 100%;
+  height: 20px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.cross-vertical {
+  width: 20px;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+/* Posiciones de las cruces */
+.cross-1 { top: 10%; left: 15%; animation: floatCross 8s ease-in-out infinite; }
+.cross-2 { top: 25%; left: 75%; animation: floatCross 10s ease-in-out infinite 1s; }
+.cross-3 { top: 45%; left: 10%; animation: floatCross 12s ease-in-out infinite 2s; }
+.cross-4 { top: 60%; left: 85%; animation: floatCross 9s ease-in-out infinite 1.5s; }
+.cross-5 { top: 75%; left: 25%; animation: floatCross 11s ease-in-out infinite 0.5s; }
+.cross-6 { top: 20%; left: 45%; animation: floatCross 13s ease-in-out infinite 2.5s; }
+.cross-7 { top: 50%; left: 60%; animation: floatCross 10s ease-in-out infinite 1s; }
+.cross-8 { top: 80%; left: 70%; animation: floatCross 14s ease-in-out infinite 3s; }
+.cross-9 { top: 15%; right: 10%; animation: floatCross 9s ease-in-out infinite 0.8s; }
+.cross-10 { top: 65%; left: 40%; animation: floatCross 11s ease-in-out infinite 1.8s; }
+.cross-11 { top: 35%; right: 20%; animation: floatCross 12s ease-in-out infinite 2.2s; }
+.cross-12 { top: 85%; left: 50%; animation: floatCross 10s ease-in-out infinite 1.2s; }
+
+/* Círculos decorativos */
+.circles-pattern {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.08;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid rgba(113, 193, 25, 0.4);
+  animation: pulse 6s ease-in-out infinite;
+}
+
+.circle-1 { width: 200px; height: 200px; top: 20%; left: 10%; animation-delay: 0s; }
+.circle-2 { width: 150px; height: 150px; top: 60%; right: 15%; animation-delay: 1s; }
+.circle-3 { width: 180px; height: 180px; bottom: 15%; left: 20%; animation-delay: 2s; }
+.circle-4 { width: 120px; height: 120px; top: 40%; right: 25%; animation-delay: 0.5s; }
+.circle-5 { width: 160px; height: 160px; top: 70%; left: 60%; animation-delay: 1.5s; }
+.circle-6 { width: 140px; height: 140px; top: 30%; left: 50%; animation-delay: 2.5s; }
+.circle-7 { width: 100px; height: 100px; bottom: 25%; right: 30%; animation-delay: 1.8s; }
+.circle-8 { width: 130px; height: 130px; top: 10%; right: 40%; animation-delay: 0.8s; }
+
+/* Ondas sutiles en la parte inferior */
+.waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  opacity: 0.1;
+}
+
+.waves svg {
+  width: 100%;
+  height: 100%;
+}
+
+.wave {
+  fill: rgba(113, 193, 25, 0.15);
+  animation: waveMove 20s ease-in-out infinite;
+}
+
+.wave-1 {
+  animation-delay: 0s;
+  opacity: 0.3;
+}
+
+.wave-2 {
+  animation-delay: -5s;
+  opacity: 0.2;
+}
+
+.wave-3 {
+  animation-delay: -10s;
+  opacity: 0.1;
+}
+
+/* Grid sutil de fondo */
+.grid-pattern {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(113, 193, 25, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(113, 193, 25, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.5;
+}
+
+/* Animaciones */
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes floatCross {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0.3;
+  }
+  25% {
+    transform: translate(10px, -10px) rotate(5deg);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translate(-5px, 10px) rotate(-3deg);
+    opacity: 0.25;
+  }
+  75% {
+    transform: translate(8px, 5px) rotate(4deg);
+    opacity: 0.2;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.6;
+  }
+}
+
+@keyframes waveMove {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-25px) translateY(-10px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cross {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .cross-horizontal {
+    height: 14px;
+  }
+  
+  .cross-vertical {
+    width: 14px;
+  }
+  
+  .circle {
+    transform: scale(0.7);
+  }
+  
+  .grid-pattern {
+    background-size: 30px 30px;
+  }
+}

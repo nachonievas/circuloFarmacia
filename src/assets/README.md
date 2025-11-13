@@ -16,7 +16,7 @@ Esta carpeta contiene todos los recursos estáticos del proyecto.
 import logo from "../assets/images/logo.png";
 
 // Luego en tu componente:
-<img src={logo} alt="Logo Farmacia Círculo" />;
+<img src={logo} alt="Logo Farmacia El Círculo" />;
 ```
 
 ## Formatos recomendados:
