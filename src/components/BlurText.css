@@ -1,0 +1,51 @@
+.blur-text-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.blur-text-word,
+.blur-text-char {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateY(20px);
+  transition: none;
+}
+
+.blur-text-word[data-direction="top"],
+.blur-text-char[data-direction="top"] {
+  transform: translateY(20px);
+}
+
+.blur-text-word[data-direction="bottom"],
+.blur-text-char[data-direction="bottom"] {
+  transform: translateY(-20px);
+}
+
+.blur-text-word[data-direction="left"],
+.blur-text-char[data-direction="left"] {
+  transform: translateX(20px);
+}
+
+.blur-text-word[data-direction="right"],
+.blur-text-char[data-direction="right"] {
+  transform: translateX(-20px);
+}
+
+.blur-text-word.visible,
+.blur-text-char.visible {
+  animation: blurIn 0.8s ease-out forwards;
+}
+
+@keyframes blurIn {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0, 0);
+  }
+}

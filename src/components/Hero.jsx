@@ -4,7 +4,7 @@ import TextType from './TextType';
 
 export default function Hero() {
   const handleWhatsAppClick = () => {
-    const phoneNumber = '5491134567890'; // Cambiar por el número de WhatsApp real
+    const phoneNumber = '5493517371920';
     const message = encodeURIComponent('Hola, me gustaría obtener más información sobre sus servicios.');
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };

@@ -43,7 +43,7 @@ export default function Navbar() {
   };
 
   const handleWhatsApp = () => {
-    const phoneNumber = '5491134567890';
+    const phoneNumber = '5493517371920';
     const message = encodeURIComponent('Hola! Me comunico desde la página web de Farmacia El Círculo.');
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };

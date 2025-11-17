@@ -18,7 +18,7 @@ export default function WhatsAppButton() {
   }, []);
 
   const handleClick = () => {
-    const phoneNumber = '5491134567890'; // Cambiar por el número real de WhatsApp
+    const phoneNumber = '5493517371920';
     const message = encodeURIComponent('Hola! Me comunico desde la página web de Farmacia El Círculo.');
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };
