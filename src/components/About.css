@@ -46,10 +46,7 @@
 .about-title {
   font-size: 2.8rem;
   margin-bottom: 24px;
-  background: linear-gradient(135deg, var(--purple), var(--kelly-green));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--purple);
   display: none; /* Oculto porque ahora usamos TrueFocus */
 }
 

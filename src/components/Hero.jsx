@@ -27,7 +27,7 @@ export default function Hero() {
             />
           </h1>
           <p className="hero-subtitle fade-in-up">
-            Más de 20 años brindando servicio profesional y atención personalizada. 
+            Más de 10 años brindando servicio profesional y atención personalizada. 
             Medicamentos de calidad, asesoramiento farmacéutico y entrega a domicilio.
           </p>
           <div className="hero-buttons fade-in-up">

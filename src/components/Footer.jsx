@@ -3,6 +3,10 @@ import maps1 from '../assets/images/maps/maps1.png';
 import maps2 from '../assets/images/maps/maps2.png';
 import maps3 from '../assets/images/maps/maps3.png';
 import maps4 from '../assets/images/maps/maps4.png';
+import sucu1 from '../assets/images/sucursales/sucu1.webp';
+import sucu2 from '../assets/images/sucursales/sucu2.webp';
+import sucu3 from '../assets/images/sucursales/sucu3.jpg';
+import sucu4 from '../assets/images/sucursales/sucu4.jpg';
 import GradientText from './GradientText';
 
 export default function Footer() {
@@ -31,6 +35,13 @@ export default function Footer() {
           <div className="locations-grid">
             {/* Farmacia 1 */}
             <div className="location-card">
+              <div className="location-photo">
+                <img 
+                  src={sucu1}
+                  alt="Farmacia Av. Duarte Quirós 3891"
+                  className="location-photo-img"
+                />
+              </div>
               <h4 className="location-name">Av. Duarte Quirós 3891</h4>
               <a 
                 href="https://www.google.com/maps/dir/Farmacia+El+C%C3%ADrculo/Av.+Duarte+Quir%C3%B3s+3891,+X5000+C%C3%B3rdoba/@-31.4046997,-64.2335069,18.4z/data=!4m13!4m12!1m5!1m1!1s0x943298b6fdd9f11d:0x310527a2ed3bce0f!2m2!1d-64.233096!2d-31.4049827!1m5!1m1!1s0x943298b6fdd9f11d:0x310527a2ed3bce0f!2m2!1d-64.233096!2d-31.4049827?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"
@@ -56,6 +67,13 @@ export default function Footer() {
 
             {/* Farmacia 2 */}
             <div className="location-card">
+              <div className="location-photo">
+                <img 
+                  src={sucu2}
+                  alt="Farmacia Isabel la Católica 947"
+                  className="location-photo-img"
+                />
+              </div>
               <h4 className="location-name">Isabel la Católica 947</h4>
               <a 
                 href="https://www.google.com/maps?vet=10CAAQoqAOahcKEwj4p7aKn_qQAxUAAAAAHQAAAAAQGA..i&rlz=1C5CHFA_enAR1073AR1073&pvq=Cg0vZy8xMXFudHJ3cHZ6IhkKE2Zhcm1hY2lhIGVsIGNpcmN1bG8QAhgD&lqi=ChNmYXJtYWNpYSBlbCBjaXJjdWxvSN6u95vTtoCACFohEAAQARACGAAYARgCIhNmYXJtYWNpYSBlbCBjaXJjdWxvkgEIcGhhcm1hY3mqAUsKDS9nLzExYzF3azBkODUQATIfEAEiG8F9AZ3I7lssPCtDCdWAvk2gT0qZstP8uUqu5DIXEAIiE2Zhcm1hY2lhIGVsIGNpcmN1bG8&fvr=1&cs=1&um=1&ie=UTF-8&fb=1&gl=ar&sa=X&geocode=KWtaNvpQmTKUMWpKBdvvRf3D&daddr=Isabel+la+Cat%C3%B3lica+947,+X5000+C%C3%B3rdoba"
@@ -81,6 +99,13 @@ export default function Footer() {
 
             {/* Farmacia 3 */}
             <div className="location-card">
+              <div className="location-photo">
+                <img 
+                  src={sucu3}
+                  alt="Farmacia Félix Paz 1196"
+                  className="location-photo-img"
+                />
+              </div>
               <h4 className="location-name">Félix Paz 1196</h4>
               <a 
                 href="https://www.google.com/maps?rlz=1C5CHFA_enAR1073AR1073&sca_esv=f517df8b24517ced&lqi=ChNmYXJtYWNpYSBlbCBjaXJjdWxvSNHNrvi1uICACFohEAAQARACGAAYARgCIhNmYXJtYWNpYSBlbCBjaXJjdWxvkgEIcGhhcm1hY3maASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTjRlWEpZYlVwUkVBRaoBSwoNL2cvMTFjMXdrMGQ4NRABMh8QASIbwX0BncjuWyw8K0MJ1YC-TaBPSpmy0_y5Sq7kMhcQAiITZmFybWFjaWEgZWwgY2lyY3Vsb_oBBAgAEBY&vet=12ahUKEwje2MSWn_qQAxVXK7kGHV96F50Q8UF6BAgNEEc..i&lei=7aIbaZ6uEdfW5OUP3_Td6Ak&cs=1&um=1&ie=UTF-8&fb=1&gl=ar&sa=X&geocode=KZvNqoKqmTKUMbG_G-ArrP6J&daddr=F%C3%A9lix+Paz+1196,+X5003+C%C3%B3rdoba"
@@ -106,6 +131,13 @@ export default function Footer() {
 
             {/* Farmacia 4 */}
             <div className="location-card">
+              <div className="location-photo">
+                <img 
+                  src={sucu4}
+                  alt="Farmacia Santiago Baravino 4442"
+                  className="location-photo-img"
+                />
+              </div>
               <h4 className="location-name">Santiago Baravino 4442</h4>
               <a 
                 href="https://www.google.com/maps?rlz=1C5CHFA_enAR1073AR1073&sca_esv=f517df8b24517ced&lqi=ChNmYXJtYWNpYSBlbCBjaXJjdWxvSPm82KvdsYCACFohEAAQARACGAAYARgCIhNmYXJtYWNpYSBlbCBjaXJjdWxvkgEIcGhhcm1hY3maAURDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMjAwTkdOcVFtbGlhM1JEWWxkc1ZXVnNXbnBTTUUweVRsY3hlRlZHUlJBQqoBSwoNL2cvMTFjMXdrMGQ4NRABMh8QASIbwX0BncjuWyw8K0MJ1YC-TaBPSpmy0_y5Sq7kMhcQAiITZmFybWFjaWEgZWwgY2lyY3Vsb_oBBAgAEDY&vet=12ahUKEwje2MSWn_qQAxVXK7kGHV96F50Q8UF6BAgNEEc..i&lei=7aIbaZ6uEdfW5OUP3_Td6Ak&cs=1&um=1&ie=UTF-8&fb=1&gl=ar&sa=X&geocode=KXetURo9mTKUMYvlXmYf2jIq&daddr=Santiago+Baravino+4442,+X5000+C%C3%B3rdoba"
@@ -135,7 +167,7 @@ export default function Footer() {
           <div className="footer-section">
             <h3 className="footer-title">Farmacia El Círculo</h3>
             <p className="footer-description">
-              Tu salud es nuestra prioridad. Más de 20 años cuidando tu bienestar y el de tu familia.
+              Tu salud es nuestra prioridad. Más de 10 años cuidando tu bienestar y el de tu familia.
             </p>
             <div className="footer-social">
               <a href="https://www.instagram.com/farmaciaelcirculocba/" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram">

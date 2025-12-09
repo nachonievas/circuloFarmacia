@@ -33,7 +33,7 @@ export default function About() {
               revealTransition="ease-in-out"
             />
             <p className="about-description">
-              Somos una farmacia familiar con <strong>más de 20 años de experiencia</strong> en el barrio. 
+              Somos una farmacia familiar con <strong>más de 10 años de experiencia</strong> en el barrio. 
               Nuestra misión es brindar un servicio de salud integral, combinando la calidez de la 
               atención personalizada con la eficiencia de la tecnología moderna.
             </p>

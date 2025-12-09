@@ -47,7 +47,7 @@
   width: 70px;
   height: 70px;
   margin: 0 auto 24px;
-  background: linear-gradient(135deg, var(--kelly-green), var(--purple));
+  background: var(--purple);
   border-radius: 50%;
   display: flex;
   align-items: center;

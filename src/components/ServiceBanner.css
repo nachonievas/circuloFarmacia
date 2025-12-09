@@ -4,18 +4,19 @@
   gap: 40px;
   align-items: center;
   margin-bottom: 60px;
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(255, 255, 255, 0.95);
   border-radius: 20px;
   overflow: hidden;
-  border: 1px solid rgba(113, 193, 25, 0.1);
+  border: 2px solid rgba(113, 193, 25, 0.3);
   transition: all 0.4s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .service-banner:hover {
-  background: rgba(255, 255, 255, 0.04);
-  border-color: rgba(113, 193, 25, 0.3);
+  background: rgba(255, 255, 255, 1);
+  border-color: rgba(113, 193, 25, 0.5);
   transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(113, 193, 25, 0.1);
+  box-shadow: 0 20px 40px rgba(113, 193, 25, 0.2);
 }
 
 .service-banner.reverse {
@@ -67,7 +68,7 @@
 
 .banner-content {
   padding: 50px;
-  color: white;
+  color: var(--black);
 }
 
 .banner-title {
@@ -82,7 +83,7 @@
 .banner-description {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(0, 0, 0, 0.7);
   margin-bottom: 30px;
   font-weight: 300;
 }
@@ -99,7 +100,7 @@
   gap: 12px;
   margin-bottom: 16px;
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(0, 0, 0, 0.8);
   font-weight: 400;
   transition: transform 0.3s ease;
 }

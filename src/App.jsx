@@ -53,7 +53,7 @@ function App() {
               </h2>
               <p style={{ 
                 fontSize: '1.2rem', 
-                color: 'rgba(255, 255, 255, 0.7)', 
+                color: 'rgba(0, 0, 0, 0.6)', 
                 fontWeight: 300
               }}>
                 Todo lo que necesitás para cuidar tu salud y la de tu familia
@@ -64,12 +64,13 @@ function App() {
             <div style={{ marginTop: '40px' }}>
               {/* Banner de Reseñas de Google */}
               <div style={{
-                background: 'rgba(255, 255, 255, 0.02)',
+                background: 'rgba(255, 255, 255, 0.9)',
                 borderRadius: '20px',
-                border: '1px solid rgba(113, 193, 25, 0.1)',
+                border: '2px solid rgba(113, 193, 25, 0.3)',
                 padding: '50px',
                 marginBottom: '60px',
-                transition: 'all 0.4s ease'
+                transition: 'all 0.4s ease',
+                boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)'
               }}>
                 <div style={{ 
                   display: 'flex', 
@@ -105,7 +106,7 @@ function App() {
                     overflowX: 'auto',
                     scrollBehavior: 'smooth',
                     scrollbarWidth: 'thin',
-                    scrollbarColor: '#71c119 rgba(255, 255, 255, 0.1)',
+                    scrollbarColor: '#71c119 rgba(0, 0, 0, 0.1)',
                     paddingBottom: '20px'
                   }}
                   className="reviews-container">
@@ -114,10 +115,10 @@ function App() {
                       minWidth: '250px',
                       maxWidth: '250px',
                       flex: '0 0 auto',
-                    background: 'rgba(255, 255, 255, 0.03)',
+                    background: 'rgba(255, 255, 255, 0.95)',
                     borderRadius: '12px',
                     padding: '20px',
-                    border: '1px solid rgba(113, 193, 25, 0.15)',
+                    border: '1px solid rgba(113, 193, 25, 0.3)',
                     transition: 'all 0.3s ease'
                   }}
                   onMouseEnter={(e) => {
@@ -135,7 +136,7 @@ function App() {
                         </svg>
                       ))}
                     </div>
-                    <p style={{ fontSize: '0.85rem', lineHeight: '1.5', color: 'rgba(255, 255, 255, 0.9)', marginBottom: '15px', fontStyle: 'italic' }}>
+                    <p style={{ fontSize: '0.85rem', lineHeight: '1.5', color: 'rgba(0, 0, 0, 0.8)', marginBottom: '15px', fontStyle: 'italic' }}>
                       "Excelente atención y servicio. Siempre encuentro lo que necesito y el personal es muy amable y profesional."
                     </p>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -155,8 +156,8 @@ function App() {
                         M
                       </div>
                       <div>
-                        <p style={{ fontSize: '0.8rem', color: 'rgba(255, 255, 255, 0.9)', fontWeight: 600, marginBottom: '2px' }}>María González</p>
-                        <p style={{ fontSize: '0.7rem', color: 'rgba(255, 255, 255, 0.5)' }}>Cliente verificado</p>
+                        <p style={{ fontSize: '0.8rem', color: 'rgba(0, 0, 0, 0.9)', fontWeight: 600, marginBottom: '2px' }}>María González</p>
+                        <p style={{ fontSize: '0.7rem', color: 'rgba(0, 0, 0, 0.5)' }}>Cliente verificado</p>
                       </div>
                     </div>
                   </div>
@@ -166,10 +167,10 @@ function App() {
                     minWidth: '250px',
                     maxWidth: '250px',
                     flex: '0 0 auto',
-                    background: 'rgba(255, 255, 255, 0.03)',
+                    background: 'rgba(255, 255, 255, 0.95)',
                     borderRadius: '12px',
                     padding: '20px',
-                    border: '1px solid rgba(113, 193, 25, 0.15)',
+                    border: '1px solid rgba(113, 193, 25, 0.3)',
                     transition: 'all 0.3s ease'
                   }}
                   onMouseEnter={(e) => {
@@ -187,7 +188,7 @@ function App() {
                         </svg>
                       ))}
                     </div>
-                    <p style={{ fontSize: '0.85rem', lineHeight: '1.5', color: 'rgba(255, 255, 255, 0.9)', marginBottom: '15px', fontStyle: 'italic' }}>
+                    <p style={{ fontSize: '0.85rem', lineHeight: '1.5', color: 'rgba(0, 0, 0, 0.9)', marginBottom: '15px', fontStyle: 'italic' }}>
                       "Muy buena farmacia, con gran variedad de productos y precios accesibles. El servicio de entrega es rápido y confiable."
                     </p>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -207,8 +208,8 @@ function App() {
                         J
                       </div>
                       <div>
-                        <p style={{ fontSize: '0.8rem', color: 'rgba(255, 255, 255, 0.9)', fontWeight: 600, marginBottom: '2px' }}>Jorge Fernández</p>
-                        <p style={{ fontSize: '0.7rem', color: 'rgba(255, 255, 255, 0.5)' }}>Cliente verificado</p>
+                        <p style={{ fontSize: '0.8rem', color: 'rgba(0, 0, 0, 0.9)', fontWeight: 600, marginBottom: '2px' }}>Jorge Fernández</p>
+                        <p style={{ fontSize: '0.7rem', color: 'rgba(0, 0, 0, 0.5)' }}>Cliente verificado</p>
                       </div>
                     </div>
                   </div>
@@ -218,10 +219,10 @@ function App() {
                     minWidth: '250px',
                     maxWidth: '250px',
                     flex: '0 0 auto',
-                    background: 'rgba(255, 255, 255, 0.03)',
+                    background: 'rgba(255, 255, 255, 0.95)',
                     borderRadius: '12px',
                     padding: '20px',
-                    border: '1px solid rgba(113, 193, 25, 0.15)',
+                    border: '1px solid rgba(113, 193, 25, 0.3)',
                     transition: 'all 0.3s ease'
                   }}
                   onMouseEnter={(e) => {
@@ -239,7 +240,7 @@ function App() {
                         </svg>
                       ))}
                     </div>
-                    <p style={{ fontSize: '0.85rem', lineHeight: '1.5', color: 'rgba(255, 255, 255, 0.9)', marginBottom: '15px', fontStyle: 'italic' }}>
+                    <p style={{ fontSize: '0.85rem', lineHeight: '1.5', color: 'rgba(0, 0, 0, 0.9)', marginBottom: '15px', fontStyle: 'italic' }}>
                       "Atención farmacéutica de primera. Me ayudaron con todas mis dudas y tienen excelentes horarios de atención."
                     </p>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -259,8 +260,8 @@ function App() {
                         L
                       </div>
                       <div>
-                        <p style={{ fontSize: '0.8rem', color: 'rgba(255, 255, 255, 0.9)', fontWeight: 600, marginBottom: '2px' }}>Laura Martínez</p>
-                        <p style={{ fontSize: '0.7rem', color: 'rgba(255, 255, 255, 0.5)' }}>Cliente verificado</p>
+                        <p style={{ fontSize: '0.8rem', color: 'rgba(0, 0, 0, 0.9)', fontWeight: 600, marginBottom: '2px' }}>Laura Martínez</p>
+                        <p style={{ fontSize: '0.7rem', color: 'rgba(0, 0, 0, 0.5)' }}>Cliente verificado</p>
                       </div>
                     </div>
                   </div>
@@ -270,10 +271,10 @@ function App() {
                     minWidth: '250px',
                     maxWidth: '250px',
                     flex: '0 0 auto',
-                    background: 'rgba(255, 255, 255, 0.03)',
+                    background: 'rgba(255, 255, 255, 0.95)',
                     borderRadius: '12px',
                     padding: '20px',
-                    border: '1px solid rgba(113, 193, 25, 0.15)',
+                    border: '1px solid rgba(113, 193, 25, 0.3)',
                     transition: 'all 0.3s ease'
                   }}
                   onMouseEnter={(e) => {
@@ -291,7 +292,7 @@ function App() {
                         </svg>
                       ))}
                     </div>
-                    <p style={{ fontSize: '0.85rem', lineHeight: '1.5', color: 'rgba(255, 255, 255, 0.9)', marginBottom: '15px', fontStyle: 'italic' }}>
+                    <p style={{ fontSize: '0.85rem', lineHeight: '1.5', color: 'rgba(0, 0, 0, 0.9)', marginBottom: '15px', fontStyle: 'italic' }}>
                       "Servicio impecable, siempre tienen stock y los precios son muy competitivos. Recomiendo totalmente."
                     </p>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -311,8 +312,8 @@ function App() {
                         C
                       </div>
                       <div>
-                        <p style={{ fontSize: '0.8rem', color: 'rgba(255, 255, 255, 0.9)', fontWeight: 600, marginBottom: '2px' }}>Carlos Rodríguez</p>
-                        <p style={{ fontSize: '0.7rem', color: 'rgba(255, 255, 255, 0.5)' }}>Cliente verificado</p>
+                        <p style={{ fontSize: '0.8rem', color: 'rgba(0, 0, 0, 0.9)', fontWeight: 600, marginBottom: '2px' }}>Carlos Rodríguez</p>
+                        <p style={{ fontSize: '0.7rem', color: 'rgba(0, 0, 0, 0.5)' }}>Cliente verificado</p>
                       </div>
                     </div>
                   </div>
@@ -322,10 +323,10 @@ function App() {
                     minWidth: '250px',
                     maxWidth: '250px',
                     flex: '0 0 auto',
-                    background: 'rgba(255, 255, 255, 0.03)',
+                    background: 'rgba(255, 255, 255, 0.95)',
                     borderRadius: '12px',
                     padding: '20px',
-                    border: '1px solid rgba(113, 193, 25, 0.15)',
+                    border: '1px solid rgba(113, 193, 25, 0.3)',
                     transition: 'all 0.3s ease'
                   }}
                   onMouseEnter={(e) => {
@@ -343,7 +344,7 @@ function App() {
                         </svg>
                       ))}
                     </div>
-                    <p style={{ fontSize: '0.85rem', lineHeight: '1.5', color: 'rgba(255, 255, 255, 0.9)', marginBottom: '15px', fontStyle: 'italic' }}>
+                    <p style={{ fontSize: '0.85rem', lineHeight: '1.5', color: 'rgba(0, 0, 0, 0.9)', marginBottom: '15px', fontStyle: 'italic' }}>
                       "Personal muy capacitado y siempre dispuesto a ayudar. Es mi farmacia de confianza hace años."
                     </p>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -363,8 +364,8 @@ function App() {
                         A
                       </div>
                       <div>
-                        <p style={{ fontSize: '0.8rem', color: 'rgba(255, 255, 255, 0.9)', fontWeight: 600, marginBottom: '2px' }}>Ana Silva</p>
-                        <p style={{ fontSize: '0.7rem', color: 'rgba(255, 255, 255, 0.5)' }}>Cliente verificado</p>
+                        <p style={{ fontSize: '0.8rem', color: 'rgba(0, 0, 0, 0.9)', fontWeight: 600, marginBottom: '2px' }}>Ana Silva</p>
+                        <p style={{ fontSize: '0.7rem', color: 'rgba(0, 0, 0, 0.5)' }}>Cliente verificado</p>
                       </div>
                     </div>
                   </div>
@@ -374,10 +375,10 @@ function App() {
                     minWidth: '250px',
                     maxWidth: '250px',
                     flex: '0 0 auto',
-                    background: 'rgba(255, 255, 255, 0.03)',
+                    background: 'rgba(255, 255, 255, 0.95)',
                     borderRadius: '12px',
                     padding: '20px',
-                    border: '1px solid rgba(113, 193, 25, 0.15)',
+                    border: '1px solid rgba(113, 193, 25, 0.3)',
                     transition: 'all 0.3s ease'
                   }}
                   onMouseEnter={(e) => {
@@ -395,7 +396,7 @@ function App() {
                         </svg>
                       ))}
                     </div>
-                    <p style={{ fontSize: '0.85rem', lineHeight: '1.5', color: 'rgba(255, 255, 255, 0.9)', marginBottom: '15px', fontStyle: 'italic' }}>
+                    <p style={{ fontSize: '0.85rem', lineHeight: '1.5', color: 'rgba(0, 0, 0, 0.9)', marginBottom: '15px', fontStyle: 'italic' }}>
                       "Excelente relación calidad-precio y muy buena ubicación. Nunca falta lo que necesito."
                     </p>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -415,8 +416,8 @@ function App() {
                         P
                       </div>
                       <div>
-                        <p style={{ fontSize: '0.8rem', color: 'rgba(255, 255, 255, 0.9)', fontWeight: 600, marginBottom: '2px' }}>Pablo Díaz</p>
-                        <p style={{ fontSize: '0.7rem', color: 'rgba(255, 255, 255, 0.5)' }}>Cliente verificado</p>
+                        <p style={{ fontSize: '0.8rem', color: 'rgba(0, 0, 0, 0.9)', fontWeight: 600, marginBottom: '2px' }}>Pablo Díaz</p>
+                        <p style={{ fontSize: '0.7rem', color: 'rgba(0, 0, 0, 0.5)' }}>Cliente verificado</p>
                       </div>
                     </div>
                   </div>
@@ -425,7 +426,7 @@ function App() {
 
                 <div style={{ textAlign: 'center', marginTop: '40px' }}>
                   <a 
-                    href="https://www.google.com/search?q=farmacia+el+circulo&rlz=1C5CHFA_enAR1073AR1073#lrd=0x943298b6fdd9f11d:0x310527a2ed3bce0f,1"
+                    href="https://www.google.com/search?q=farmacia+el+circulo&rlz=1C5CHFA_enAR1073AR1073#lrd=0x943298b6fdd9f11d:0x310527a2ed3bce0f,1&sv=CAESywEKuQEStgEKd0FMa3RfdkhnVGcwbmtRWWtOSFN1aHhLNFhMZm1aVFBRR1ZOVDRnSmNtblFEZVJfamVXcERmUkY0VGZNUk1EdTdFZkdGelpDSVhUb3loNGNxS0Qyei1aT28xSFJvejVkeUR4VHlQNFFBUDlXVVRuNFdySUZJWkxrEhdDZFFjYVpTMEE3WEQ1T1VQNnREUDJRdxoiQUZNQUdHcDB0UzBrOUR0MmhheC1FXzVrOWVENzhxcmxRQRIEODA1MRoBMyoAMAA4ASDw7oWJBDACSgIQAg"
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
