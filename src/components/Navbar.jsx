@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './Navbar.css';
-import logo from '../assets/images/logoFarmacia.png';
 import isotipo from '../assets/images/isotipo.png';
+import letras from '../assets/images/letras.png';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -52,7 +52,8 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container container">
         <div className="navbar-logo">
-          <img src={logo} alt="Farmacia El Círculo" className="navbar-logo-img" />
+          <img src={isotipo} alt="Farmacia El Círculo" className="navbar-logo-isotipo" />
+          <img src={letras} alt="Farmacia El Círculo" className="navbar-logo-letras" />
         </div>
 
         <ul className="navbar-menu">

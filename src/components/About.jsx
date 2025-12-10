@@ -33,13 +33,13 @@ export default function About() {
               revealTransition="ease-in-out"
             />
             <p className="about-description">
-              Somos una farmacia familiar con <strong>más de 10 años de experiencia</strong> en el barrio. 
+              Somos una farmacia familiar con <strong>10 años de experiencia</strong> en el barrio. 
               Nuestra misión es brindar un servicio de salud integral, combinando la calidez de la 
               atención personalizada con la eficiencia de la tecnología moderna.
             </p>
             <div className="about-stats">
               <div className="stat-item">
-                <div className="stat-number">20+</div>
+                <div className="stat-number">10+</div>
                 <div className="stat-label">Años de Experiencia</div>
               </div>
               <div className="stat-item">

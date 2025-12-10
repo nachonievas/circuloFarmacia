@@ -49,15 +49,26 @@
   filter: drop-shadow(0 2px 8px rgba(113, 193, 25, 0.3));
 }
 
-.navbar-logo-img {
+.navbar-logo-isotipo {
   height: 60px;
   width: auto;
   object-fit: contain;
   filter: drop-shadow(0 2px 8px rgba(113, 193, 25, 0.3));
 }
 
-.navbar.scrolled .navbar-logo-img {
-  height: 50px;
+.navbar-logo-letras {
+  height: 120px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(113, 193, 25, 0.3));
+}
+
+.navbar.scrolled .navbar-logo-isotipo {
+  height: 42px;
+}
+
+.navbar.scrolled .navbar-logo-letras {
+  height: 42px;
 }
 
 .navbar.scrolled .navbar-logo svg {

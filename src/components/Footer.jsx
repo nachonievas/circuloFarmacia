@@ -44,7 +44,7 @@ export default function Footer() {
               </div>
               <h4 className="location-name">Av. Duarte Quirós 3891</h4>
               <a 
-                href="https://www.google.com/maps/dir/Farmacia+El+C%C3%ADrculo/Av.+Duarte+Quir%C3%B3s+3891,+X5000+C%C3%B3rdoba/@-31.4046997,-64.2335069,18.4z/data=!4m13!4m12!1m5!1m1!1s0x943298b6fdd9f11d:0x310527a2ed3bce0f!2m2!1d-64.233096!2d-31.4049827!1m5!1m1!1s0x943298b6fdd9f11d:0x310527a2ed3bce0f!2m2!1d-64.233096!2d-31.4049827?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"
+                href="https://maps.app.goo.gl/DaFoxACARTKgWwDv7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="location-map-link"
