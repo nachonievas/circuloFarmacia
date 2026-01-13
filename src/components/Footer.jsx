@@ -1,10 +1,8 @@
 import './Footer.css';
 import maps1 from '../assets/images/maps/maps1.png';
-import maps2 from '../assets/images/maps/maps2.png';
 import maps3 from '../assets/images/maps/maps3.png';
 import maps4 from '../assets/images/maps/maps4.png';
 import sucu1 from '../assets/images/sucursales/sucu1.webp';
-import sucu2 from '../assets/images/sucursales/sucu2.webp';
 import sucu3 from '../assets/images/sucursales/sucu3.jpg';
 import sucu4 from '../assets/images/sucursales/sucu4.jpg';
 import GradientText from './GradientText';
@@ -53,38 +51,6 @@ export default function Footer() {
                   <img 
                     src={maps1}
                     alt="Mapa de Av. Duarte Quirós 3891"
-                    className="location-map-img"
-                  />
-                  <div className="map-overlay">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="white">
-                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                    </svg>
-                    <p>Cómo llegar</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            {/* Farmacia 2 */}
-            <div className="location-card">
-              <div className="location-photo">
-                <img 
-                  src={sucu2}
-                  alt="Farmacia Isabel la Católica 947"
-                  className="location-photo-img"
-                />
-              </div>
-              <h4 className="location-name">Isabel la Católica 947</h4>
-              <a 
-                href="https://www.google.com/maps?vet=10CAAQoqAOahcKEwj4p7aKn_qQAxUAAAAAHQAAAAAQGA..i&rlz=1C5CHFA_enAR1073AR1073&pvq=Cg0vZy8xMXFudHJ3cHZ6IhkKE2Zhcm1hY2lhIGVsIGNpcmN1bG8QAhgD&lqi=ChNmYXJtYWNpYSBlbCBjaXJjdWxvSN6u95vTtoCACFohEAAQARACGAAYARgCIhNmYXJtYWNpYSBlbCBjaXJjdWxvkgEIcGhhcm1hY3mqAUsKDS9nLzExYzF3azBkODUQATIfEAEiG8F9AZ3I7lssPCtDCdWAvk2gT0qZstP8uUqu5DIXEAIiE2Zhcm1hY2lhIGVsIGNpcmN1bG8&fvr=1&cs=1&um=1&ie=UTF-8&fb=1&gl=ar&sa=X&geocode=KWtaNvpQmTKUMWpKBdvvRf3D&daddr=Isabel+la+Cat%C3%B3lica+947,+X5000+C%C3%B3rdoba"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="location-map-link"
-              >
-                <div className="location-map-preview">
-                  <img 
-                    src={maps2}
-                    alt="Mapa de Isabel la Católica 947"
                     className="location-map-img"
                   />
                   <div className="map-overlay">
